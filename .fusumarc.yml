@@ -1,0 +1,14 @@
+meta:
+  url: https://gabelluardo.github.io/
+  title:
+  description:
+  siteName:
+slide:
+  loop: false
+  targetBlank: true
+  ui:
+    sidebar: false
+    pagination: bullets
+    effect:
+  code:
+    theme: okaidia
