@@ -39,9 +39,9 @@ def main():
     friends = [
         Friend("Stefano Ricevuto", "bello", 8),
         Friend("Stefano Strano", "intelligente", 7),
-        Friend("Pietro Parcheggiatore", "giovane", 5),
-        Friend("Tonio Rigido", "ricco", 4),
-        Friend("Bruce Striscione", "muscoloso", 8),
+        Friend("Pietro Parcheggiatore", "giovane", 7.5),
+        Friend("Tonio Rigido", "ricco", 8),
+        Friend("Bruce Striscione", "muscoloso", 9),
     ]
 
     fields = ["Name", "Quality", "Friendship"]

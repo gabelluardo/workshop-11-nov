@@ -9,12 +9,14 @@ def main():
 
     print(sum(primes))
 
+
 def is_prime(test, primes):
     for p in primes:
-        if (test % p == 0):
+        if test % p == 0:
             return False
 
     return True
+
 
 if __name__ == "__main__":
     main()
