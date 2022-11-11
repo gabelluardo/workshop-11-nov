@@ -1,1 +1,415 @@
-<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>slide</title><meta property="og:title" content="slide"><meta property="og:type" content="article"><meta property="og:url" content="https://gabelluardo.github.io/"><meta property="og:image" content="https://gabelluardo.github.io/thumbnail.png"><script defer="defer" src="/runtime.88c46cc7855d8b250072.bundle.js"></script><script defer="defer" src="/vendor.5e18acf3edb1778ef99e.bundle.js"></script><script defer="defer" src="/main.c3f38abe4dce6bc208ce.bundle.js"></script><link href="/vendor.5e18acf3edb1778ef99e.css" rel="stylesheet"><link href="/main.c3f38abe4dce6bc208ce.css" rel="stylesheet"></head><body><div id="root"><div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events" id="main-slides"><div class="swiper-pagination"></div><div class="swiper-wrapper" id="swiper-wrapper-3fbf1c7f94ceee08" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);"><div class="swiper-slide swiper-slide-active" data-hash="slide-1" role="group" aria-label="1 / 6" style="width: 1200px;"><div class="slide-internal-box"><h1>Titolo</h1><h2>Sottotitolo</h2></div></div><div class="swiper-slide swiper-slide-next" data-hash="slide-2" role="group" aria-label="2 / 6" style="width: 1200px;"><div class="slide-internal-box"><h1>1</h1><p>Testo</p><div class="img"></div></div></div><div class="swiper-slide" data-hash="slide-3" role="group" aria-label="3 / 6" style="width: 1200px;"><div class="slide-internal-box"><h2>1.1</h2><div class="img"></div><div class="icon"></div></div></div><div class="swiper-slide" data-hash="slide-4" role="group" aria-label="4 / 6" style="width: 1200px;"><div class="slide-internal-box"><h1>2</h1><div class="img"></div><div class="icon"></div></div></div><div class="swiper-slide" data-hash="slide-5" role="group" aria-label="5 / 6" style="width: 1200px;"><div class="slide-internal-box"><h1>Meme</h1><div class="img"></div></div></div><div class="swiper-slide" data-hash="slide-6" role="group" aria-label="6 / 6" style="width: 1200px;"><div class="slide-internal-box"><h1>Fin</h1><div class="space"></div><p>Link slide: <a href="https://gabelluardo.github.io/">https://gabelluardo.github.io/</a></p><div class="space"></div><p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="/e5741d71b39c0e10f2c5.webp"></a></p></div></div></div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div></div></body></html>
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>workshop-11-nov</title><meta property="og:title" content="workshop-11-nov"><meta property="og:type" content="article"><meta property="og:url" content="https://gabelluardo.github.io/workshop-11-nov"><meta property="og:image" content="https://gabelluardo.github.io/workshop-11-nov/thumbnail.png"><script defer="defer" src="/workshop-11-nov/runtime.1e563d681c088eddc8f0.bundle.js"></script><script defer="defer" src="/workshop-11-nov/vendor.d2c8120ec91426794ab1.bundle.js"></script><script defer="defer" src="/workshop-11-nov/main.59696a5477371e8b82cc.bundle.js"></script><link href="/workshop-11-nov/vendor.d2c8120ec91426794ab1.css" rel="stylesheet"><link href="/workshop-11-nov/main.59696a5477371e8b82cc.css" rel="stylesheet"></head><body><div id="root"><div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events" id="main-slides"><div class="swiper-pagination"></div><div class="swiper-wrapper" id="swiper-wrapper-eb7eb831104b1dc52" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);"><div class="swiper-slide swiper-slide-active" data-hash="slide-1" role="group" aria-label="1 / 49" style="width: 1200px;"><div class="slide-internal-box"><h1>Cosa è Python</h1></div></div><div class="swiper-slide swiper-slide-next" data-hash="slide-2" role="group" aria-label="2 / 49" style="width: 1200px;"><div class="slide-internal-box"><h1>Si</h1><p><img src="https://media.giphy.com/media/OQ87ZWbglJ0SpCxY07/giphy.gif"></p><h1>ma NO</h1></div></div><div class="swiper-slide" data-hash="slide-3" role="group" aria-label="3 / 49" style="width: 1200px;"><div class="slide-internal-box"><p><img src="/workshop-11-nov/10a96dedca4a83968757.webp"></p></div></div><div class="swiper-slide" data-hash="slide-4" role="group" aria-label="4 / 49" style="width: 1200px;"><div class="slide-internal-box"><h1>"Alto livello"</h1><p>La gestione della memoria dinamica non è affidata al <em>programmatore</em></p></div></div><div class="swiper-slide" data-hash="slide-5" role="group" aria-label="5 / 49" style="width: 1200px;"><div class="slide-internal-box"><p>Mentre il C o in C++ la memoria allocata nello heap</p><pre><code>malloc()
+calloc()
+realloc()
+</code></pre><p>deve essere rilasciata esplicitamente per non causare memory leak</p><pre><code>free()
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-6" role="group" aria-label="6 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-c" tabindex="0"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"stdio.h"</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"stdlib.h"</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> dim <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> <span class="token operator">*</span>p <span class="token operator">=</span> <span class="token function">malloc</span><span class="token punctuation">(</span>dim <span class="token operator">*</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>dim<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        p<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>dim<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span> p<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><pre class="language-sh" tabindex="0"><code class="language-sh">gcc <span class="token parameter variable">-o</span> main main.c
+./main
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-7" role="group" aria-label="7 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-c" tabindex="0"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"stdio.h"</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"stdlib.h"</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> dim <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> <span class="token operator">*</span>p <span class="token operator">=</span> <span class="token function">malloc</span><span class="token punctuation">(</span>dim <span class="token operator">*</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>dim<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        p<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>dim<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span> p<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">free</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// evita memory leak, OK</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-8" role="group" aria-label="8 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-c" tabindex="0"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"stdio.h"</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"stdlib.h"</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> dim <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> <span class="token operator">*</span>p <span class="token operator">=</span> <span class="token function">malloc</span><span class="token punctuation">(</span>dim <span class="token operator">*</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>dim<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        p<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>dim<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span> p<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">free</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// evita memory leak, OK</span>
+    <span class="token function">free</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// double free, AHIA!</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-9" role="group" aria-label="9 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python">dim <span class="token operator">=</span> <span class="token number">10</span>
+l <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>dim<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    l<span class="token punctuation">.</span>append<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> i <span class="token keyword">in</span> l<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+</code></pre><pre class="language-sh" tabindex="0"><code class="language-sh">python main.py
+</code></pre><p>oppure</p><pre class="language-sh" tabindex="0"><code class="language-sh">python3 main.py
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-10" role="group" aria-label="10 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    dim <span class="token operator">=</span> <span class="token number">10</span>
+    l <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>dim<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        l<span class="token punctuation">.</span>append<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> l<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
+    main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-11" role="group" aria-label="11 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    dim <span class="token operator">=</span> <span class="token number">10</span>
+    l <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>dim<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        l<span class="token punctuation">.</span>append<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span>l<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
+    main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-12" role="group" aria-label="12 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    dim <span class="token operator">=</span> <span class="token number">10</span>
+    l <span class="token operator">=</span> <span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>dim<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token comment"># list comprehension</span>
+
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span>l<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
+    main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-13" role="group" aria-label="13 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
+    main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-14" role="group" aria-label="14 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-15" role="group" aria-label="15 / 49" style="width: 1200px;"><div class="slide-internal-box"><h1>"Alto livello"</h1><p>La gestione della memoria dinamica è affidata al <em>garbage collector</em></p><p>...</p><p><img src="https://media.giphy.com/media/3o7TKJlHZznKbrKAU0/giphy.gif"></p></div></div><div class="swiper-slide" data-hash="slide-16" role="group" aria-label="16 / 49" style="width: 1200px;"><div class="slide-internal-box"><h1>Interpretato</h1><p>Nessuna fase di compilazione, l'interprete python analizza il codice scritto e lo esegue direttamente. È anche possibile usare le REPL di python eseguire codice senza scrivere su un file</p></div></div><div class="swiper-slide" data-hash="slide-17" role="group" aria-label="17 / 49" style="width: 1200px;"><div class="slide-internal-box"><h1>Scripting</h1><p>Quando non hai sbatta di fare le cose a mano</p></div></div><div class="swiper-slide" data-hash="slide-18" role="group" aria-label="18 / 49" style="width: 1200px;"><div class="slide-internal-box"><p>e costringi il sistema operativo a farlo per te.</p></div></div><div class="swiper-slide" data-hash="slide-19" role="group" aria-label="19 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> os
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    os<span class="token punctuation">.</span>makedirs<span class="token punctuation">(</span><span class="token string">"compiti"</span><span class="token punctuation">,</span> exist_ok<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"compiti/</span><span class="token interpolation"><span class="token punctuation">{</span>i<span class="token punctuation">}</span></span><span class="token string">.txt"</span></span><span class="token punctuation">,</span> <span class="token string">"w"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+            f<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"ciao file </span><span class="token interpolation"><span class="token punctuation">{</span>i<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-20" role="group" aria-label="20 / 49" style="width: 1200px;"><div class="slide-internal-box"><h2>Voglio sapere quante <em>c</em> ha scritto Dante</h2></div></div><div class="swiper-slide" data-hash="slide-21" role="group" aria-label="21 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    cnt <span class="token operator">=</span> <span class="token number">0</span>
+
+    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"dante.txt"</span><span class="token punctuation">,</span> <span class="token string">"r"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+        <span class="token keyword">for</span> line <span class="token keyword">in</span> f<span class="token punctuation">.</span>readlines<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            words <span class="token operator">=</span> line<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span>
+            <span class="token keyword">for</span> w <span class="token keyword">in</span> words<span class="token punctuation">:</span>
+                cnt <span class="token operator">+=</span> w<span class="token punctuation">.</span>lower<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token string">"c"</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span>cnt<span class="token punctuation">)</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-22" role="group" aria-label="22 / 49" style="width: 1200px;"><div class="slide-internal-box"><h2>Voglio sapere quante volte Renzo e Lucia sono nominati ne I Promessi Sposi</h2></div></div><div class="swiper-slide" data-hash="slide-23" role="group" aria-label="23 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    renzo <span class="token operator">=</span> <span class="token number">0</span>
+    lucia <span class="token operator">=</span> <span class="token number">0</span>
+
+    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"promessi_sposi.txt"</span><span class="token punctuation">,</span> <span class="token string">"r"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+        <span class="token keyword">for</span> line <span class="token keyword">in</span> f<span class="token punctuation">.</span>readlines<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            words <span class="token operator">=</span> line<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span>
+            <span class="token keyword">for</span> w <span class="token keyword">in</span> words<span class="token punctuation">:</span>
+                renzo <span class="token operator">+=</span> w<span class="token punctuation">.</span>lower<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token string">"renzo"</span><span class="token punctuation">)</span>
+                lucia <span class="token operator">+=</span> w<span class="token punctuation">.</span>lower<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token string">"lucia"</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Renzo: </span><span class="token interpolation"><span class="token punctuation">{</span>renzo<span class="token punctuation">}</span></span><span class="token string">, Lucia: </span><span class="token interpolation"><span class="token punctuation">{</span>lucia<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-24" role="group" aria-label="24 / 49" style="width: 1200px;"><div class="slide-internal-box"><h2><em>e</em> la parola più usata?</h2></div></div><div class="swiper-slide" data-hash="slide-25" role="group" aria-label="25 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    total_words <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"promessi_sposi.txt"</span><span class="token punctuation">,</span> <span class="token string">"r"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+        <span class="token keyword">for</span> line <span class="token keyword">in</span> f<span class="token punctuation">.</span>readlines<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            words <span class="token operator">=</span> line<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span>
+            <span class="token keyword">for</span> w <span class="token keyword">in</span> words<span class="token punctuation">:</span>
+                filtered <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">filter</span><span class="token punctuation">(</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">.</span>isalpha<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> w<span class="token punctuation">.</span>lower<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+                <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>filtered<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                    word <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>filtered<span class="token punctuation">)</span>
+
+                <span class="token keyword">if</span> word <span class="token keyword">in</span> total_words<span class="token punctuation">:</span>
+                    total_words<span class="token punctuation">[</span>word<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    total_words<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token punctuation">{</span>word<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token builtin">sorted</span><span class="token punctuation">(</span>total_words<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> key<span class="token operator">=</span><span class="token keyword">lambda</span> item<span class="token punctuation">:</span> item<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-26" role="group" aria-label="26 / 49" style="width: 1200px;"><div class="slide-internal-box"><p><img src="https://media.giphy.com/media/COrCfusbivCxTj2qZB/giphy.gif"></p></div></div><div class="swiper-slide" data-hash="slide-27" role="group" aria-label="27 / 49" style="width: 1200px;"><div class="slide-internal-box"><h1>Orientato agli oggetti</h1><p>Tutto è un oggetto, che possiede determinati <em>attributi</em> e <em>metodi</em></p></div></div><div class="swiper-slide" data-hash="slide-28" role="group" aria-label="28 / 49" style="width: 1200px;"><div class="slide-internal-box"><h1>Attributo</h1><p>Qualità dell'oggetto</p></div></div><div class="swiper-slide" data-hash="slide-29" role="group" aria-label="29 / 49" style="width: 1200px;"><div class="slide-internal-box"><h1>Metodo</h1><p>Uso dell'oggetto</p></div></div><div class="swiper-slide" data-hash="slide-30" role="group" aria-label="30 / 49" style="width: 1200px;"><div class="slide-internal-box"><h1>Esempio:</h1><h2>Penna</h2><pre class="language-text" tabindex="0"><code class="language-text">attributi:
+    livello inchiostro
+    colore inchiostro
+    marca
+    tipo
+    tappo
+metodi:
+    scrivi
+    picchietta
+    metti il tappo
+    togli il tappo
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-31" role="group" aria-label="31 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Pen</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> ink<span class="token punctuation">,</span> style<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">"black"</span><span class="token punctuation">,</span> trademark<span class="token operator">=</span><span class="token string">"Mattel"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>_ink <span class="token operator">=</span> ink
+        self<span class="token punctuation">.</span>_color <span class="token operator">=</span> color
+        self<span class="token punctuation">.</span>_style <span class="token operator">=</span> style
+        self<span class="token punctuation">.</span>_trademark <span class="token operator">=</span> trademark
+        self<span class="token punctuation">.</span>_top <span class="token operator">=</span> <span class="token boolean">True</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-32" role="group" aria-label="32 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">write</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> text<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> self<span class="token punctuation">.</span>_color <span class="token operator">==</span> <span class="token string">"red"</span><span class="token punctuation">:</span>
+        head <span class="token operator">=</span> <span class="token string">"\033[91m"</span>
+    <span class="token keyword">elif</span> self<span class="token punctuation">.</span>_color <span class="token operator">==</span> <span class="token string">"blue"</span><span class="token punctuation">:</span>
+        head <span class="token operator">=</span> <span class="token string">"\033[96m"</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        head <span class="token operator">=</span> <span class="token string">"\033[98m"</span>
+
+    tail <span class="token operator">=</span> <span class="token string">"\033[00m"</span>
+
+    <span class="token keyword">if</span> <span class="token keyword">not</span> self<span class="token punctuation">.</span>_top <span class="token keyword">and</span> self<span class="token punctuation">.</span>_ink <span class="token operator">&gt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"</span><span class="token interpolation"><span class="token punctuation">{</span>head<span class="token punctuation">}</span></span><span class="token interpolation"><span class="token punctuation">{</span>text<span class="token punctuation">}</span></span><span class="token interpolation"><span class="token punctuation">{</span>tail<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>_ink <span class="token operator">-=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">tap</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Tip tap tip tap"</span><span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">plug</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    self<span class="token punctuation">.</span>_top <span class="token operator">=</span> <span class="token boolean">True</span>
+
+<span class="token keyword">def</span> <span class="token function">unplug</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    self<span class="token punctuation">.</span>_top <span class="token operator">=</span> <span class="token boolean">False</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-33" role="group" aria-label="33 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string-interpolation"><span class="token string">f"</span><span class="token interpolation"><span class="token punctuation">{</span>self<span class="token punctuation">.</span>_color<span class="token punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token punctuation">{</span>self<span class="token punctuation">.</span>style<span class="token punctuation">}</span></span><span class="token string"> - </span><span class="token interpolation"><span class="token punctuation">{</span>self<span class="token punctuation">.</span>trademark<span class="token punctuation">}</span></span><span class="token string">\n\tlivello inchiosto: </span><span class="token interpolation"><span class="token punctuation">{</span>self<span class="token punctuation">.</span>ink<span class="token punctuation">}</span></span><span class="token string">"</span></span>
+
+<span class="token decorator annotation punctuation">@property</span>
+<span class="token keyword">def</span> <span class="token function">ink</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> self<span class="token punctuation">.</span>_ink
+
+<span class="token decorator annotation punctuation">@property</span>
+<span class="token keyword">def</span> <span class="token function">style</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> self<span class="token punctuation">.</span>_style
+
+<span class="token decorator annotation punctuation">@property</span>
+<span class="token keyword">def</span> <span class="token function">trademark</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> self<span class="token punctuation">.</span>_trademark
+
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-34" role="group" aria-label="34 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Pen</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> ink<span class="token punctuation">,</span> color<span class="token punctuation">,</span> style<span class="token punctuation">,</span> trademark<span class="token operator">=</span><span class="token string">"Mattel"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>_ink <span class="token operator">=</span> ink
+        self<span class="token punctuation">.</span>_color <span class="token operator">=</span> color
+        self<span class="token punctuation">.</span>_style <span class="token operator">=</span> style
+        self<span class="token punctuation">.</span>_trademark <span class="token operator">=</span> trademark
+        self<span class="token punctuation">.</span>_top <span class="token operator">=</span> <span class="token boolean">True</span>
+
+    <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string-interpolation"><span class="token string">f"</span><span class="token interpolation"><span class="token punctuation">{</span>self<span class="token punctuation">.</span>_color<span class="token punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token punctuation">{</span>self<span class="token punctuation">.</span>style<span class="token punctuation">}</span></span><span class="token string"> - </span><span class="token interpolation"><span class="token punctuation">{</span>self<span class="token punctuation">.</span>trademark<span class="token punctuation">}</span></span><span class="token string">\n\tlivello inchiosto: </span><span class="token interpolation"><span class="token punctuation">{</span>self<span class="token punctuation">.</span>ink<span class="token punctuation">}</span></span><span class="token string">"</span></span>
+
+    <span class="token decorator annotation punctuation">@property</span>
+    <span class="token keyword">def</span> <span class="token function">ink</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>_ink
+
+    <span class="token decorator annotation punctuation">@property</span>
+    <span class="token keyword">def</span> <span class="token function">style</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>_style
+
+    <span class="token decorator annotation punctuation">@property</span>
+    <span class="token keyword">def</span> <span class="token function">trademark</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>_trademark
+
+    <span class="token keyword">def</span> <span class="token function">write</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> text<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>_color <span class="token operator">==</span> <span class="token string">"red"</span><span class="token punctuation">:</span>
+            head <span class="token operator">=</span> <span class="token string">"\033[91m"</span>
+        <span class="token keyword">elif</span> self<span class="token punctuation">.</span>_color <span class="token operator">==</span> <span class="token string">"blue"</span><span class="token punctuation">:</span>
+            head <span class="token operator">=</span> <span class="token string">"\033[96m"</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            head <span class="token operator">=</span> <span class="token string">"\033[98m"</span>
+
+        tail <span class="token operator">=</span> <span class="token string">"\033[00m"</span>
+
+        <span class="token keyword">if</span> <span class="token keyword">not</span> self<span class="token punctuation">.</span>_top <span class="token keyword">and</span> self<span class="token punctuation">.</span>_ink <span class="token operator">&gt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"</span><span class="token interpolation"><span class="token punctuation">{</span>head<span class="token punctuation">}</span></span><span class="token interpolation"><span class="token punctuation">{</span>text<span class="token punctuation">}</span></span><span class="token interpolation"><span class="token punctuation">{</span>tail<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+
+            self<span class="token punctuation">.</span>_ink <span class="token operator">-=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">tap</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Tip tap tip tap"</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">plug</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>_top <span class="token operator">=</span> <span class="token boolean">True</span>
+
+    <span class="token keyword">def</span> <span class="token function">unplug</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>_top <span class="token operator">=</span> <span class="token boolean">False</span>
+
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-35" role="group" aria-label="35 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Pencil</span><span class="token punctuation">:</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Pen</span><span class="token punctuation">:</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Marker</span><span class="token punctuation">:</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-36" role="group" aria-label="36 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Writer</span><span class="token punctuation">:</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Pencil</span><span class="token punctuation">(</span>Writer<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Pen</span><span class="token punctuation">(</span>Writer<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-37" role="group" aria-label="37 / 49" style="width: 1200px;"><div class="slide-internal-box"><h1>OOP do it better</h1></div></div><div class="swiper-slide" data-hash="slide-38" role="group" aria-label="38 / 49" style="width: 1200px;"><div class="slide-internal-box"><h1>Strutture dati</h1><pre class="language-python" tabindex="0"><code class="language-python">lista <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">or</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+tupla <span class="token operator">=</span> <span class="token builtin">tuple</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+dizionario <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">or</span> <span class="token punctuation">{</span>chiave<span class="token punctuation">:</span> valore<span class="token punctuation">}</span>
+insieme <span class="token operator">=</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">or</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-39" role="group" aria-label="39 / 49" style="width: 1200px;"><div class="slide-internal-box"><h2>Natalia Romanzi vuole sapere chi è il suo BFF</h2></div></div><div class="swiper-slide" data-hash="slide-40" role="group" aria-label="40 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    names <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token string">"Stefano Ricevuto"</span><span class="token punctuation">,</span>
+        <span class="token string">"Stefano Strano"</span><span class="token punctuation">,</span>
+        <span class="token string">"Pietro Parcheggiatore"</span><span class="token punctuation">,</span>
+        <span class="token string">"Tonio Rigido"</span><span class="token punctuation">,</span>
+        <span class="token string">"Bruce Striscione"</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+    quality <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">(</span><span class="token string">"bello"</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">(</span><span class="token string">"intelligente"</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">(</span><span class="token string">"giovane"</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">(</span><span class="token string">"ricco"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">(</span><span class="token string">"muscoloso"</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+    value <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">7.5</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">for</span> i<span class="token punctuation">,</span> name <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>names<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"</span><span class="token interpolation"><span class="token punctuation">{</span>name<span class="token punctuation">}</span></span><span class="token string">,\t</span><span class="token interpolation"><span class="token punctuation">{</span>quality<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token string">,\t</span><span class="token interpolation"><span class="token punctuation">{</span>quality<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">*</span>value<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-41" role="group" aria-label="41 / 49" style="width: 1200px;"><div class="slide-internal-box"><h2>Salvando tutto su un file csv (sì, tipo excel)</h2></div></div><div class="swiper-slide" data-hash="slide-42" role="group" aria-label="42 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> csv
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    names <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token string">"Stefano Ricevuto"</span><span class="token punctuation">,</span>
+        <span class="token string">"Stefano Strano"</span><span class="token punctuation">,</span>
+        <span class="token string">"Pietro Parcheggiatore"</span><span class="token punctuation">,</span>
+        <span class="token string">"Tonio Rigido"</span><span class="token punctuation">,</span>
+        <span class="token string">"Bruce Striscione"</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+    quality <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">(</span><span class="token string">"bello"</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">(</span><span class="token string">"intelligente"</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">(</span><span class="token string">"giovane"</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">(</span><span class="token string">"ricco"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">(</span><span class="token string">"muscoloso"</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+    value <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">7.5</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span>
+
+    fields <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Name"</span><span class="token punctuation">,</span> <span class="token string">"Quality"</span><span class="token punctuation">,</span> <span class="token string">"Friendship"</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"bff.csv"</span><span class="token punctuation">,</span> <span class="token string">"w"</span><span class="token punctuation">,</span> newline<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+        writer <span class="token operator">=</span> csv<span class="token punctuation">.</span>DictWriter<span class="token punctuation">(</span>f<span class="token punctuation">,</span> fieldnames<span class="token operator">=</span>fields<span class="token punctuation">,</span> dialect<span class="token operator">=</span><span class="token string">"excel"</span><span class="token punctuation">)</span>
+        writer<span class="token punctuation">.</span>writeheader<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">for</span> i<span class="token punctuation">,</span> name <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>names<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            writer<span class="token punctuation">.</span>writerow<span class="token punctuation">(</span>
+                <span class="token punctuation">{</span>
+                    fields<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">:</span> name<span class="token punctuation">,</span>
+                    fields<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span> quality<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    fields<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">:</span> quality<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">*</span> value<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">)</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-43" role="group" aria-label="43 / 49" style="width: 1200px;"><div class="slide-internal-box"><h2>E se volesse leggerlo un file csv?</h2><p>Non va bene per niente, troppa sbatta e spreco di risorse</p></div></div><div class="swiper-slide" data-hash="slide-44" role="group" aria-label="44 / 49" style="width: 1200px;"><div class="slide-internal-box"><h2>Usiamo una classe</h2><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Friend</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">,</span> quality<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>_name <span class="token operator">=</span> name
+        self<span class="token punctuation">.</span>_quality <span class="token operator">=</span> quality
+        self<span class="token punctuation">.</span>_value <span class="token operator">=</span> value
+
+    <span class="token decorator annotation punctuation">@property</span>
+    <span class="token keyword">def</span> <span class="token function">name</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>_name
+
+    <span class="token decorator annotation punctuation">@property</span>
+    <span class="token keyword">def</span> <span class="token function">value</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>_value <span class="token operator">*</span> self<span class="token punctuation">.</span>evaluate_quality<span class="token punctuation">(</span>self<span class="token punctuation">.</span>_quality<span class="token punctuation">)</span>
+
+    <span class="token decorator annotation punctuation">@property</span>
+    <span class="token keyword">def</span> <span class="token function">quality</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>_quality
+
+    <span class="token decorator annotation punctuation">@staticmethod</span>
+    <span class="token keyword">def</span> <span class="token function">evaluate_quality</span><span class="token punctuation">(</span>quality<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> quality <span class="token operator">==</span> <span class="token string">"bello"</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token number">6</span>
+        <span class="token keyword">elif</span> quality <span class="token operator">==</span> <span class="token string">"intelligente"</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token number">7</span>
+        <span class="token keyword">elif</span> quality <span class="token operator">==</span> <span class="token string">"giovane"</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token number">5</span>
+        <span class="token keyword">elif</span> quality <span class="token operator">==</span> <span class="token string">"ricco"</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token number">4</span>
+        <span class="token keyword">elif</span> quality <span class="token operator">==</span> <span class="token string">"muscoloso"</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token number">8</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token number">0</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-45" role="group" aria-label="45 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    friends <span class="token operator">=</span> <span class="token punctuation">[</span>
+        Friend<span class="token punctuation">(</span><span class="token string">"Stefano Ricevuto"</span><span class="token punctuation">,</span> <span class="token string">"bello"</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        Friend<span class="token punctuation">(</span><span class="token string">"Stefano Strano"</span><span class="token punctuation">,</span> <span class="token string">"intelligente"</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        Friend<span class="token punctuation">(</span><span class="token string">"Pietro Parcheggiatore"</span><span class="token punctuation">,</span> <span class="token string">"giovane"</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        Friend<span class="token punctuation">(</span><span class="token string">"Tonio Rigido"</span><span class="token punctuation">,</span> <span class="token string">"ricco"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        Friend<span class="token punctuation">(</span><span class="token string">"Bruce Striscione"</span><span class="token punctuation">,</span> <span class="token string">"muscoloso"</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+
+    fields <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Name"</span><span class="token punctuation">,</span> <span class="token string">"Quality"</span><span class="token punctuation">,</span> <span class="token string">"Friendship"</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"bff.csv"</span><span class="token punctuation">,</span> <span class="token string">"w"</span><span class="token punctuation">,</span> newline<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+        writer <span class="token operator">=</span> csv<span class="token punctuation">.</span>DictWriter<span class="token punctuation">(</span>f<span class="token punctuation">,</span> fieldnames<span class="token operator">=</span>fields<span class="token punctuation">,</span> dialect<span class="token operator">=</span><span class="token string">"excel"</span><span class="token punctuation">)</span>
+        writer<span class="token punctuation">.</span>writeheader<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">for</span> f <span class="token keyword">in</span> friends<span class="token punctuation">:</span>
+            writer<span class="token punctuation">.</span>writerow<span class="token punctuation">(</span>
+                <span class="token punctuation">{</span>
+                    fields<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">:</span> f<span class="token punctuation">.</span>name<span class="token punctuation">,</span>
+                    fields<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span> f<span class="token punctuation">.</span>quality<span class="token punctuation">,</span>
+                    fields<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">:</span> f<span class="token punctuation">.</span>value<span class="token punctuation">,</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">)</span>
+
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-46" role="group" aria-label="46 / 49" style="width: 1200px;"><div class="slide-internal-box"><h2>Adesso lo possiamo leggere facile facile</h2></div></div><div class="swiper-slide" data-hash="slide-47" role="group" aria-label="47 / 49" style="width: 1200px;"><div class="slide-internal-box"><pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    friends <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    fields <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Name"</span><span class="token punctuation">,</span> <span class="token string">"Quality"</span><span class="token punctuation">,</span> <span class="token string">"Friendship"</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"bff.csv"</span><span class="token punctuation">,</span> <span class="token string">"r"</span><span class="token punctuation">,</span> newline<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+        <span class="token comment"># skip header line</span>
+        f<span class="token punctuation">.</span>readline<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        reader <span class="token operator">=</span> csv<span class="token punctuation">.</span>DictReader<span class="token punctuation">(</span>f<span class="token punctuation">,</span> fieldnames<span class="token operator">=</span>fields<span class="token punctuation">,</span> dialect<span class="token operator">=</span><span class="token string">"excel"</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">for</span> f <span class="token keyword">in</span> reader<span class="token punctuation">:</span>
+            friends<span class="token punctuation">.</span>append<span class="token punctuation">(</span>
+                Friend<span class="token punctuation">(</span>
+                    f<span class="token punctuation">[</span><span class="token string">"Name"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    f<span class="token punctuation">[</span><span class="token string">"Quality"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token builtin">float</span><span class="token punctuation">(</span>f<span class="token punctuation">[</span><span class="token string">"Friendship"</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">/</span> Friend<span class="token punctuation">.</span>evaluate_quality<span class="token punctuation">(</span>f<span class="token punctuation">[</span><span class="token string">"Quality"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                <span class="token punctuation">)</span>
+            <span class="token punctuation">)</span>
+
+    <span class="token keyword">for</span> f <span class="token keyword">in</span> friends<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token punctuation">)</span>
+</code></pre></div></div><div class="swiper-slide" data-hash="slide-48" role="group" aria-label="48 / 49" style="width: 1200px;"><div class="slide-internal-box"><p><img src="https://media.giphy.com/media/aNbGyHcDYphNbhe4EE/giphy.gif"></p></div></div><div class="swiper-slide" data-hash="slide-49" role="group" aria-label="49 / 49" style="width: 1200px;"><div class="slide-internal-box"><h1>Fin</h1><div class="space"></div><p>Link slide: <a href="https://gabelluardo.github.io/">https://gabelluardo.github.io/</a></p><div class="space"></div><p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="/workshop-11-nov/e5741d71b39c0e10f2c5.webp"></a></p></div></div></div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div></div></body></html>
