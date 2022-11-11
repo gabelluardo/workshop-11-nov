@@ -1,3 +1,3 @@
-# Slide Template
+# Workshop 11 novembre
 
-Template una presentazione
+Workshop su Python e OOP per i nuovi membri del team Policumbent
